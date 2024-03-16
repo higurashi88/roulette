@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ルーレット！</title>
+    <link rel="stylesheet" href="roulette.css">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <h1>ルーレット</h1>
+    </header>
+    <div class="content-area">
+        <div class="roulette_area">
+            <div class="item">
+                <input type="text" class="culum" value="項目1">
+            </div>
+            <div class="item">
+                <input type="text" class="culum" value="項目2">
+            </div>
+        </div>
+        <div class="setting-area">
+            <button id="start" onclick="startRoulette()">START</button>
+            <button id="stop" onclick="stopRoulette()">STOP</button>
+            <button id="reset" onclick="resetRoulette()">RESET</button>
+            <input type="number" id="number" value="2" min="2" max="8">
+        </div>
+    </div>
+    <hr>
+    <div class="ref-area">
+        <h2>説明</h2>
+        <p>話題選びに、どれにしようか悩んだ時にとにかく選べるルーレット！</p>
+        <p>オンライン飲み会、暇つぶし、買い物で悩んだ時など使い方いろいろ！</p>
+        <h2>使い方</h2>
+        <p>ルーレットの項目を入力し、STARTボタンを押すと、ルーレットが回ります。</p>
+        <p>STOPボタンを押すと、ルーレットが止まります。</p>
+        <p>RESETボタンを押すと、ルーレットの項目がリセットされます。</p>
+        <p>項目数は2~8の間で入力してください。</p>
+    </div>
+    <footer>
+        <p>ルーレットを回して、項目を決めよう！</p>
+    </footer>
+    <script src="roulette.js"></script>
+</body>
+
+</html>

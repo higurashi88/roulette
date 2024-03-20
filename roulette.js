@@ -1,3 +1,8 @@
+// がめんが読み込まれたときに実行される
+window.onload = function () {
+    changeCulum();
+}
+
 // id="number"のinput要素を取得
 let number = document.getElementById('number');
 
@@ -12,6 +17,10 @@ let stop_interval = 0;
 let currentIndex = 0;
 
 number.addEventListener('change', function () {
+    changeCulum();
+});
+
+function changeCulum() {
     let roulette_area = document.querySelector('.roulette_area');
     let item = document.querySelectorAll('.item');
     let num = number.value;
@@ -33,7 +42,7 @@ number.addEventListener('change', function () {
             roulette_area.removeChild(item[i]);
         }
     }
-});
+}
 
 
 // ルーレットをハイライトする

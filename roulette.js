@@ -21,6 +21,19 @@ number.addEventListener('change', function () {
 });
 
 function changeCulum() {
+    let context = [
+        "最近見た映画",
+        "きのこ派？たけのこ派?",
+        "おすすめの家電",
+        "犬派？猫派？",
+        "地元自慢！",
+        "楽しかった旅行先",
+        "おすすめの暇つぶしグッズ",
+        "ちょっとだけ自慢できること",
+        "おすすめアニメ",
+        "推しのプレゼン",
+        "一番高かった買い物",
+        "一番満足した雑貨",];
     let roulette_area = document.querySelector('.roulette_area');
     let item = document.querySelectorAll('.item');
     let num = number.value;
@@ -34,6 +47,10 @@ function changeCulum() {
             input.classList.add('culum');
             input.setAttribute('type', 'text');
             input.setAttribute('placeholder', '項目' + (i + 1));
+            // inputのvalueにcontextの中身をランダムに入れる
+            input.value = context[Math.floor(Math.random() * context.length)];
+            // inputに入れた値をリストから削除
+            context.splice(context.indexOf(input.value), 1);
             div.appendChild(input);
             roulette_area.appendChild(div);
         }

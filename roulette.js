@@ -1,6 +1,29 @@
+let context = [
+    "最近見た映画",
+    "きのこ派？たけのこ派?",
+    "おすすめの家電",
+    "犬派？猫派？",
+    "地元自慢！",
+    "楽しかった旅行先",
+    "おすすめの暇つぶしグッズ",
+    "ちょっとだけ自慢できること",
+    "おすすめアニメ",
+    "推しのプレゼン",
+    "一番高かった買い物",
+    "一番満足した雑貨",
+    "行きたい場所"];
+
 // がめんが読み込まれたときに実行される
 window.onload = function () {
     changeCulum();
+    // culumクラス内のinput要素を取得
+    let culum = document.querySelectorAll('.culum');
+    // input要素にランダムな値を入れる
+    for (let i = 0; i < culum.length; i++) {
+        culum[i].value = context[Math.floor(Math.random() * context.length)];
+        // inputに入れた値をリストから削除
+        context.splice(context.indexOf(culum[i].value), 1);
+    }
 }
 
 // id="number"のinput要素を取得
@@ -21,19 +44,6 @@ number.addEventListener('change', function () {
 });
 
 function changeCulum() {
-    let context = [
-        "最近見た映画",
-        "きのこ派？たけのこ派?",
-        "おすすめの家電",
-        "犬派？猫派？",
-        "地元自慢！",
-        "楽しかった旅行先",
-        "おすすめの暇つぶしグッズ",
-        "ちょっとだけ自慢できること",
-        "おすすめアニメ",
-        "推しのプレゼン",
-        "一番高かった買い物",
-        "一番満足した雑貨",];
     let roulette_area = document.querySelector('.roulette_area');
     let item = document.querySelectorAll('.item');
     let num = number.value;

@@ -160,3 +160,7 @@ h2 {
     box-shadow: 0 0 10px rgba(63, 63, 63, 0.1);
     border-radius: 10px;
 }
+
+.center {
+    text-align: center;
+}

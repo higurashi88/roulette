@@ -1,63 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
-    <title>ルーレット！</title>
-    <link rel="stylesheet" href="roulette.css">
+    <title>話題選びに便利なルーレットアプリ | 無料で使えるルーレットツール</title>
     <meta charset="utf-8" />
+    <meta name="description" content="オンライン飲み会や買い物の悩み解決！話題選びや暇つぶしに使える無料のルーレットツール。項目は編集可能で、2~8個の中から自由に選べます。">
+    <meta name="keywords" content="ルーレット, 話題選び, オンライン飲み会, 暇つぶし, 無料ツール">
+    <link rel="stylesheet" href="roulette.css">
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "話題選びルーレット",
+      "url": "https://d2h0zipua3jbg4.cloudfront.net",
+      "description": "オンライン飲み会や買い物の悩みを解決する無料のルーレットツールです。自由に項目を入力して、ルーレットで話題をランダムに選べます。",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
 </head>
+
 
 <body>
     <header>
-        <h1 class="title">ルーレット!</h1>
+        <h1 class="title">ルーレットアプリで話題選びを簡単に！</h1>
     </header>
     <hr>
-    <div class="content-area">
-        <div class="roulette_area">
+    <main class="content-area">
+        <section class="roulette_area">
+            <h2>ルーレット項目</h2>
             <div class="item">
-                <input type="text" class="culum" value="最近見た映画">
+                <input type="text" class="culum" value="">
             </div>
             <div class="item">
-                <input type="text" class="culum" value="行きたい場所">
+                <input type="text" class="culum" value="">
             </div>
             <div class="item">
-                <input type="text" class="culum" value="食べたいもの">
+                <input type="text" class="culum" value="">
             </div>
             <div class="item">
-                <input type="text" class="culum" value="やりたいこと">
+                <input type="text" class="culum" value="">
             </div>
             <div class="item">
-                <input type="text" class="culum" value="買いたいもの">
+                <input type="text" class="culum" value="">
             </div>
-        </div>
-        <div class="setting-area">
+        </section>
+        <section class="setting-area">
+            <h2>ルーレットの操作</h2>
             <button id="start" onclick="startRoulette()">START</button>
             <button id="stop" onclick="stopRoulette()">STOP</button>
             <button id="reset" onclick="resetRoulette()">RESET</button>
+            <label for="number">項目数</label>
             <input type="number" id="number" value="5" min="2" max="8">
-        </div>
-    </div>
+        </section>
+    </main>
     <hr>
-    <div class="ref-area">
-        <h2 class="sub-title">説明</h2>
-        <p class="ref">話題選びに、どれにしようか悩んだ時になんでも使えるルーレット！</p>
-        <p class="ref">オンライン飲み会、暇つぶし、買い物で悩んだ時など使い方いろいろ！</p>
-        <h2 class="sub-title">使い方</h2>
-        <p class="ref">表示されてる項目内容は編集可です。</p>
-        <p class="ref">ルーレットの項目を入力し、STARTボタンを押すと、ルーレットが回ります。</p>
-        <p class="ref">STOPボタンを押すと、ルーレットが止まります。</p>
-        <p class="ref">RESETボタンを押すと、ルーレットの項目がリセットされます。</p>
-        <p class="ref">項目数〔リセットボタンの下〕は2~8の間で入力してください。</p>
+    <section class="ref-area">
+        <h2 class="sub-title">ルーレットアプリの説明</h2>
+        <p class="ref">悩んだ時に便利な無料のルーレットツール。オンライン飲み会や買い物、話題選びに使えます。</p>
+        <p class="ref">表示されている項目は自由に編集可能です。</p>
+        <h2 class="sub-title">使い方ガイド</h2>
+        <p class="ref">① 項目を入力し、STARTボタンを押すとルーレットが回り始めます。</p>
+        <p class="ref">② STOPボタンでルーレットが止まり、ランダムに選ばれます。</p>
+        <p class="ref">③ RESETボタンで項目がリセットされます。</p>
+        <p class="ref">項目数（2~8）の間で選択可能です。</p>
         <h2 class="sub-title">利用規約</h2>
-        <p class="ref">このサービスは、無料で利用できます。</p>
-        <p class="ref">利用は自己責任でお願いします。</p>
-        <p class="ref">利用したことによる損害について、当方は一切の責任を負いません。</p>
-        <p class="ref">このサービスは、予告なく変更・削除する場合があります。</p>
-        <p class="ref">このサービスは、予告なく停止・終了する場合があります。</p>
-    </div>
+        <p class="ref">無料で提供されるこのサービスは、自己責任で利用してください。利用に伴う損害について責任は負いかねます。また、予告なく変更・停止・終了する場合があります。</p>
+    </section>
     <footer>
         <p class="copy-right">
-            &copy; 2024 ルーレット！ All Rights Reserved.
+            &copy; 2024 話題選びルーレットアプリ All Rights Reserved.
         </p>
     </footer>
     <script src="roulette.js"></script>

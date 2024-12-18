@@ -6,14 +6,13 @@
     <meta charset="utf-8" />
     <meta name="description" content="オンライン飲み会や買い物の悩み解決！話題選びや暇つぶしに使える無料のルーレットツール。項目は編集可能で、2~8個の中から自由に選べます。">
     <meta name="keywords" content="ルーレット, 話題選び, オンライン飲み会, 暇つぶし, 無料ツール">
-    <link rel="stylesheet" href="roulette.css">
+    <link rel="stylesheet" href="css/roulette.css">
     <!-- 構造化データ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "話題選びルーレット",
-      "url": "https://d2h0zipua3jbg4.cloudfront.net",
       "description": "オンライン飲み会や買い物の悩みを解決する無料のルーレットツールです。自由に項目を入力して、ルーレットで話題をランダムに選べます。",
       "applicationCategory": "EntertainmentApplication",
       "operatingSystem": "All",
@@ -57,7 +56,7 @@
             <button id="stop" onclick="stopRoulette()">STOP</button>
             <button id="reset" onclick="resetRoulette()">RESET</button>
             <label for="number">項目数</label>
-            <input type="number" id="number" value="5" min="2" max="8">
+            <input type="number" id="number" value="5" min="2" max="10">
         </section>
     </main>
     <hr>
@@ -78,7 +77,7 @@
             &copy; 2024 話題選びルーレットアプリ All Rights Reserved.
         </p>
     </footer>
-    <script src="roulette.js"></script>
+    <script src="js/roulette.js"></script>
 </body>
 
 </html>
